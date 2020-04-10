@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        function checkVowel(myString) {
+            let a = 0;
+            let e = 0;
+            let i = 0;
+            let o = 0;
+            let u = 0;
+
+            let x = 0;
+            while (x < myString.length) {
+
+                let lowerCase = myString.toLowerCase();
+                switch (lowerCase.charAt(x)) {
+                    case 'a':
+                        a += 1;
+                        break;
+                    case 'e':
+                        e += 1;
+                        break;
+                    case 'o':
+                        o += 1;
+                        break;
+                    case 'u':
+                        u += 1;
+                        break;
+                    case 'i':
+                        i += 1;
+                        break;
+                }
+              x++;
+            }
+
+            alert('a is: '+ a + ' & e is: '+ e + ' & i is: '+ i + ' & o is: '+ o + ' & u is: '+ u);
+        }
+    </pre>
+    <script>
+        function checkVowel(myString) {
+            let a = 0;
+            let e = 0;
+            let i = 0;
+            let o = 0;
+            let u = 0;
+
+            let x = 0;
+            while (x < myString.length) {
+
+                let lowerCase = myString.toLowerCase();
+                switch (lowerCase.charAt(x)) {
+                    case 'a':
+                        a += 1;
+                        break;
+                    case 'e':
+                        e += 1;
+                        break;
+                    case 'o':
+                        o += 1;
+                        break;
+                    case 'u':
+                        u += 1;
+                        break;
+                    case 'i':
+                        i += 1;
+                        break;
+                }
+              x++;
+            }
+
+            alert('a is: '+ a + ' & e is: '+ e + ' & i is: '+ i + ' & o is: '+ o + ' & u is: '+ u);
+        }
+
+        checkVowel('My name is Mojeed Kusimo');
+    </script>
+</body>
+</html>
