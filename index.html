@@ -40,7 +40,12 @@
 
             alert('a is: '+ a + ' & e is: '+ e + ' & i is: '+ i + ' & o is: '+ o + ' & u is: '+ u);
         }
-    </pre>
+    </pre><br><br>
+    <h1>TEST HERE</h1>
+    <h3>Enter your string below:</h3>
+    <input type="text" name="" id="string">
+    <button onclick="getValue()">Count</button><br><br>
+     <span>Answer = </span><span id="solution"></span>
     <script>
         function checkVowel(myString) {
             let a = 0;
@@ -73,10 +78,14 @@
               x++;
             }
 
-            alert('a is: '+ a + ' & e is: '+ e + ' & i is: '+ i + ' & o is: '+ o + ' & u is: '+ u);
+            return 'a is: '+ a + ' & e is: '+ e + ' & i is: '+ i + ' & o is: '+ o + ' & u is: '+ u;
         }
 
-        checkVowel('My name is Mojeed Kusimo');
+        function getValue() {
+
+        let myString = (document.getElementById('string').value);
+        document.getElementById('solution').innerHTML = checkVowel(myString);
+        }
     </script>
 </body>
 </html>
